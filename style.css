@@ -1,0 +1,85 @@
+header{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(254, 134, 154);
+    text-align: center;
+    border: 5px solid red;
+    border-radius: 15px;
+    padding: 20px 0;
+}
+h1{
+    text-align: center;
+
+}
+header h1{
+    color: blueviolet;
+    display: inline-block;
+    transition: 0.2s;
+}
+header h1:hover{
+ transform: scale(1.1);
+}
+
+
+.cartas h1{
+color: red;
+}
+.carta{
+    border-radius: 15px;
+
+      transition: transform 0.2s, box-shadow 0.2s;
+    border: 5px solid red;
+     width: 50%;
+    margin: 30px auto;
+    background-color: rgb(255, 145, 237);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.carta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.carta a {
+     display: inline-block; /* Necesario para que el transform funcione bien */
+  transition: transform 0.4s ease;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+    
+}
+
+.carta a:hover {
+    transform: scale(1.05);
+    animation: carta 0.6s infinite; /* Duración y repetición de la animación */
+}
+
+
+@keyframes carta {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@media screen and (max-width: 600px) {
+  .carta {
+    width: 80%;
+    padding: 15px; 
+  }
+}
+
+.tiempo{
+    background-color: rgb(204, 149, 255);
+}
+#tiempoJuntos, #cuentaRegresiva{
+    text-align: center;
+}
